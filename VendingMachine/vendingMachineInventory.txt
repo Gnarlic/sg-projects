@@ -1,0 +1,8 @@
+A1::Coke::1.50::30
+A2::Khyber Crystal::1000000.01::0
+A3::Vibroblade::248.37::3
+A4::Sabaac Card Deck::15.15::9
+A5::Dovin Basal::1500.00::3
+A6::Rancor Blast Energy Drink::2.50::25
+A7::R2 Unit Motivator::2497.25::1
+A8::Luke Skywalker's Right Hand::19.80::0

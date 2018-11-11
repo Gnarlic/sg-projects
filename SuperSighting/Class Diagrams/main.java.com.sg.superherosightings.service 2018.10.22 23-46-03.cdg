@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="main.java.com.sg.superherosightings.service">
+  <ClassDiagramComponents>
+    <Class name="LocationServiceImpl" package="com.sg.superherosightings.service" visibility="public" xPosition="135.0" yPosition="20.0">
+      <Fields>
+        <Field name="lDao" type="LocationDao" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package">
+          <Argument type="LocationDao" name="lDao"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getAllLocations" returnType="List&lt;Location&gt;" visibility="public"/>
+        <Method name="getLocationsForSuperbeing" returnType="List&lt;Location&gt;" visibility="public">
+          <Argument type="int" name="superId"/>
+        </Method>
+        <Method name="getLocation" returnType="Location" visibility="public">
+          <Argument type="int" name="locationId"/>
+        </Method>
+        <Method name="addLocation" returnType="Location" visibility="public">
+          <Argument type="Location" name="location"/>
+        </Method>
+        <Method name="editLocation" returnType="void" visibility="public">
+          <Argument type="Location" name="location"/>
+        </Method>
+        <Method name="deleteLocation" returnType="void" visibility="public">
+          <Argument type="int" name="locationId"/>
+        </Method>
+        <Method name="searchLocations" returnType="List&lt;Location&gt;" visibility="public">
+          <Argument type="String" name="location"/>
+          <Argument type="Model" name="model"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="OrganizationServiceImpl" package="com.sg.superherosightings.service" visibility="public" xPosition="620.0" yPosition="34.0">
+      <Fields>
+        <Field name="oDao" type="OrganizationDao" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package">
+          <Argument type="OrganizationDao" name="oDao"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getAllOrganizations" returnType="List&lt;Organization&gt;" visibility="public"/>
+        <Method name="getOrganizationsForSuperbeing" returnType="List&lt;Organization&gt;" visibility="public">
+          <Argument type="int" name="superId"/>
+        </Method>
+        <Method name="getOrganization" returnType="Organization" visibility="public">
+          <Argument type="int" name="organizationId"/>
+        </Method>
+        <Method name="addOrganization" returnType="Organization" visibility="public">
+          <Argument type="Organization" name="organization"/>
+        </Method>
+        <Method name="editOrganization" returnType="void" visibility="public">
+          <Argument type="Organization" name="organization"/>
+        </Method>
+        <Method name="deleteOrganization" returnType="void" visibility="public">
+          <Argument type="int" name="organizationId"/>
+        </Method>
+        <Method name="searchOrganizations" returnType="List&lt;Organization&gt;" visibility="public">
+          <Argument type="String" name="organization"/>
+          <Argument type="Model" name="model"/>
+        </Method>
+        <Method name="addMember" returnType="void" visibility="public">
+          <Argument type="int" name="superbeingId"/>
+          <Argument type="int" name="organizationId"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="SightingServiceImpl" package="com.sg.superherosightings.service" visibility="public" xPosition="665.0" yPosition="599.0">
+      <Fields>
+        <Field name="sDao" type="SightingDao" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package">
+          <Argument type="SightingDao" name="sDao"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getAllSightings" returnType="List&lt;SightingInfo&gt;" visibility="public"/>
+        <Method name="getLastTenSightings" returnType="List&lt;Sighting&gt;" visibility="public"/>
+        <Method name="getSightingsWithSuperbeing" returnType="List&lt;SightingInfo&gt;" visibility="public">
+          <Argument type="int" name="superId"/>
+        </Method>
+        <Method name="getSightingsAtLocation" returnType="List&lt;Sighting&gt;" visibility="public">
+          <Argument type="int" name="locationId"/>
+        </Method>
+        <Method name="getSightingsOnDate" returnType="List&lt;SightingInfo&gt;" visibility="public">
+          <Argument type="String" name="date"/>
+        </Method>
+        <Method name="getSighting" returnType="SightingInfo" visibility="public">
+          <Argument type="int" name="sightingId"/>
+        </Method>
+        <Method name="addSighting" returnType="Sighting" visibility="public">
+          <Argument type="Sighting" name="sighting"/>
+          <Argument type="int" name="superId"/>
+        </Method>
+        <Method name="editSighting" returnType="void" visibility="public">
+          <Argument type="Sighting" name="sighting"/>
+          <Argument type="int" name="superbeingId"/>
+        </Method>
+        <Method name="deleteSighting" returnType="void" visibility="public">
+          <Argument type="int" name="sightingId"/>
+        </Method>
+        <Method name="getLast10Sightings" returnType="List&lt;SightingInfo&gt;" visibility="public"/>
+        <Method name="sightingAndLocationForSuper" returnType="List&lt;SightingInfo&gt;" visibility="public">
+          <Argument type="int" name="superbeingId"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="SuperbeingServiceImpl" package="com.sg.superherosightings.service" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields>
+        <Field name="suDao" type="SuperbeingDao" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package">
+          <Argument type="SuperbeingDao" name="superDao"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getAllSuperbeings" returnType="List&lt;Superbeing&gt;" visibility="public"/>
+        <Method name="getSuperbeingsAtLocation" returnType="List&lt;Superbeing&gt;" visibility="public">
+          <Argument type="int" name="locationId"/>
+        </Method>
+        <Method name="getSuperbeing" returnType="Superbeing" visibility="public">
+          <Argument type="int" name="superId"/>
+        </Method>
+        <Method name="addSuper" returnType="Superbeing" visibility="public">
+          <Argument type="Superbeing" name="superbeing"/>
+        </Method>
+        <Method name="editSuper" returnType="void" visibility="public">
+          <Argument type="Superbeing" name="superbeing"/>
+        </Method>
+        <Method name="deleteSuper" returnType="void" visibility="public">
+          <Argument type="int" name="superId"/>
+        </Method>
+        <Method name="searchSuperbeing" returnType="List&lt;Superbeing&gt;" visibility="public">
+          <Argument type="String" name="superName"/>
+          <Argument type="Model" name="model"/>
+        </Method>
+        <Method name="getMembers" returnType="List&lt;Superbeing&gt;" visibility="public">
+          <Argument type="int" name="organizationId"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="LocationService" package="com.sg.superherosightings.service" visibility="public" xPosition="135.0" yPosition="364.0">
+      <Methods>
+        <Method name="getAllLocations" returnType="List&lt;Location&gt;" visibility="package"/>
+        <Method name="getLocationsForSuperbeing" returnType="List&lt;Location&gt;" visibility="package">
+          <Argument type="int" name="superId"/>
+        </Method>
+        <Method name="getLocation" returnType="Location" visibility="package">
+          <Argument type="int" name="locationId"/>
+        </Method>
+        <Method name="addLocation" returnType="Location" visibility="package">
+          <Argument type="Location" name="location"/>
+        </Method>
+        <Method name="editLocation" returnType="void" visibility="public">
+          <Argument type="Location" name="location"/>
+        </Method>
+        <Method name="deleteLocation" returnType="void" visibility="public">
+          <Argument type="int" name="locationId"/>
+        </Method>
+        <Method name="searchLocations" returnType="List&lt;Location&gt;" visibility="public">
+          <Argument type="String" name="location"/>
+          <Argument type="Model" name="model"/>
+        </Method>
+      </Methods>
+    </Interface>
+    <Interface name="OrganizationService" package="com.sg.superherosightings.service" visibility="public" xPosition="633.0" yPosition="375.0">
+      <Methods>
+        <Method name="getAllOrganizations" returnType="List&lt;Organization&gt;" visibility="package"/>
+        <Method name="getOrganizationsForSuperbeing" returnType="List&lt;Organization&gt;" visibility="package">
+          <Argument type="int" name="superId"/>
+        </Method>
+        <Method name="getOrganization" returnType="Organization" visibility="package">
+          <Argument type="int" name="organizationId"/>
+        </Method>
+        <Method name="addOrganization" returnType="Organization" visibility="package">
+          <Argument type="Organization" name="organization"/>
+        </Method>
+        <Method name="editOrganization" returnType="void" visibility="public">
+          <Argument type="Organization" name="organization"/>
+        </Method>
+        <Method name="deleteOrganization" returnType="void" visibility="public">
+          <Argument type="int" name="organizationId"/>
+        </Method>
+        <Method name="searchOrganizations" returnType="List&lt;Organization&gt;" visibility="package">
+          <Argument type="String" name="organization"/>
+          <Argument type="Model" name="model"/>
+        </Method>
+        <Method name="addMember" returnType="void" visibility="public">
+          <Argument type="int" name="superbeingId"/>
+          <Argument type="int" name="organizationId"/>
+        </Method>
+      </Methods>
+    </Interface>
+    <Interface name="SightingService" package="com.sg.superherosightings.service" visibility="public" xPosition="123.0" yPosition="610.0">
+      <Methods>
+        <Method name="getAllSightings" returnType="List&lt;SightingInfo&gt;" visibility="package"/>
+        <Method name="getLastTenSightings" returnType="List&lt;Sighting&gt;" visibility="package"/>
+        <Method name="getSightingsWithSuperbeing" returnType="List&lt;SightingInfo&gt;" visibility="package">
+          <Argument type="int" name="superId"/>
+        </Method>
+        <Method name="getSightingsAtLocation" returnType="List&lt;Sighting&gt;" visibility="package">
+          <Argument type="int" name="locationId"/>
+        </Method>
+        <Method name="getSightingsOnDate" returnType="List&lt;SightingInfo&gt;" visibility="package">
+          <Argument type="String" name="date"/>
+        </Method>
+        <Method name="getSighting" returnType="SightingInfo" visibility="package">
+          <Argument type="int" name="sightingId"/>
+        </Method>
+        <Method name="addSighting" returnType="Sighting" visibility="package">
+          <Argument type="Sighting" name="sighting"/>
+          <Argument type="int" name="superId"/>
+        </Method>
+        <Method name="editSighting" returnType="void" visibility="public">
+          <Argument type="Sighting" name="sighting"/>
+          <Argument type="int" name="superbeingId"/>
+        </Method>
+        <Method name="deleteSighting" returnType="void" visibility="public">
+          <Argument type="int" name="sightingId"/>
+        </Method>
+        <Method name="getLast10Sightings" returnType="List&lt;SightingInfo&gt;" visibility="public"/>
+        <Method name="sightingAndLocationForSuper" returnType="List&lt;SightingInfo&gt;" visibility="public">
+          <Argument type="int" name="superbeingId"/>
+        </Method>
+      </Methods>
+    </Interface>
+    <Interface name="SuperbeingService" package="com.sg.superherosightings.service" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Methods>
+        <Method name="getAllSuperbeings" returnType="List&lt;Superbeing&gt;" visibility="package"/>
+        <Method name="getSuperbeingsAtLocation" returnType="List&lt;Superbeing&gt;" visibility="package">
+          <Argument type="int" name="locationId"/>
+        </Method>
+        <Method name="getSuperbeing" returnType="Superbeing" visibility="package">
+          <Argument type="int" name="superId"/>
+        </Method>
+        <Method name="addSuper" returnType="Superbeing" visibility="package">
+          <Argument type="Superbeing" name="superbeing"/>
+        </Method>
+        <Method name="editSuper" returnType="void" visibility="public">
+          <Argument type="Superbeing" name="superbeing"/>
+        </Method>
+        <Method name="deleteSuper" returnType="void" visibility="public">
+          <Argument type="int" name="superId"/>
+        </Method>
+        <Method name="searchSuperbeing" returnType="List&lt;Superbeing&gt;" visibility="public">
+          <Argument type="String" name="superName"/>
+          <Argument type="Model" name="model"/>
+        </Method>
+        <Method name="getMembers" returnType="List&lt;Superbeing&gt;" visibility="public">
+          <Argument type="int" name="organizationId"/>
+        </Method>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com.sg.superherosightings.service.OrganizationServiceImpl" target="com.sg.superherosightings.service.OrganizationService"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com.sg.superherosightings.service.SuperbeingServiceImpl" target="com.sg.superherosightings.service.SuperbeingService"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com.sg.superherosightings.service.LocationServiceImpl" target="com.sg.superherosightings.service.LocationService"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com.sg.superherosightings.service.SightingServiceImpl" target="com.sg.superherosightings.service.SightingService"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

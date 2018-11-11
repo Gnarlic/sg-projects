@@ -1,0 +1,8 @@
+#surefire_0
+#Mon Feb 12 18:34:46 PST 2018
+maven.ext.class.path=C\:\\Program Files\\NetBeans 8.2\\java\\maven-nblib\\netbeans-eventspy.jar
+file.encoding=UTF-8
+test=com.sg.dvdlibrary.dao.DVDLibraryDaoTest
+basedir=C\:\\Repos\\DemoFormatting\\nicholasthompson-individual-work\\DVDLibrary
+user.dir=C\:\\Repos\\DemoFormatting\\nicholasthompson-individual-work\\DVDLibrary
+localRepository=C\:\\Users\\Elnic\\.m2\\repository

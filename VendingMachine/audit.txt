@@ -1,0 +1,29 @@
+
+2018-02-25T21:44:06.336 : vendItem: A1
+2018-02-25T21:44:06.375 : vendItem: A1
+2018-02-25T21:49:51.828 : vendItem: A1
+2018-02-25T21:59:51.696 : vendItem: Exception: com.sg.vendingmachine.service.VendingMachineInsufficientFundsException: Insufficient Funds.
+2018-02-25T22:00:18.201 : vendItem: Exception: com.sg.vendingmachine.dao.VendingMachineInventoryEmptyException: This item is out of stock.
+2018-02-25T22:00:52.647 : vendItem: Exception: com.sg.vendingmachine.dao.VendingMachineInventoryEmptyException: This item is out of stock.
+2018-02-25T22:02:53.743 : vendItem: Exception: com.sg.vendingmachine.service.VendingMachineInsufficientFundsException: Insufficient Funds.
+2018-02-25T22:07:50.471 : vendItem: Exception: com.sg.vendingmachine.dao.VendingMachineInvalidItemException: Invalid item
+2018-02-25T22:08:06.927 : vendItem: Exception: com.sg.vendingmachine.dao.VendingMachineInventoryEmptyException: This item is out of stock.
+2018-02-25T22:08:25.901 : vendItem: Exception: com.sg.vendingmachine.dao.VendingMachineInventoryEmptyException: This item is out of stock.
+2018-02-25T22:08:33.841 : vendItem: A1
+2018-02-25T22:08:39.261 : vendItem: Exception: com.sg.vendingmachine.service.VendingMachineInsufficientFundsException: Insufficient Funds.
+2018-02-25T22:08:56.831 : vendItem: Exception: com.sg.vendingmachine.service.VendingMachineInsufficientFundsException: Insufficient Funds.
+2018-02-26T16:32:01.287 : vendItem: Exception: com.sg.vendingmachine.service.VendingMachineInsufficientFundsException: Insufficient Funds.
+2018-02-26T16:35:48.852 : vendItem: Exception: com.sg.vendingmachine.dao.VendingMachineInventoryEmptyException: This item is out of stock.
+2018-02-26T17:15:02.538 : vendItem: A1
+2018-02-26T17:19:49.531 : vendItem: Exception: com.sg.vendingmachine.dao.VendingMachineInvalidItemException: Invalid item
+2018-02-26T17:19:59.956 : vendItem: A1
+2018-02-26T17:22:03.346 : vendItem: A1
+2018-02-26T17:28:21.618 : vendItem: A1
+2018-02-26T17:29:28.135 : vendItem: A1
+2018-02-26T19:59:22.484 : vendItem: Exception: java.lang.NullPointerException
+2018-02-26T20:01:44.314 : vendItem: Exception: java.lang.NullPointerException
+2018-02-26T20:03:10.324 : vendItem: A1
+2018-03-01T15:28:35.002 : vendItem: Exception: com.sg.vendingmachine.service.VendingMachineInsufficientFundsException: Insufficient Funds.
+2018-03-01T15:28:50.936 : vendItem: A1
+2018-03-27T01:52:43.472 : vendItem: Exception: com.sg.vendingmachine.dao.VendingMachineInvalidItemException: Invalid item
+2018-03-28T05:08:04.956 : vendItem: Exception: com.sg.vendingmachine.dao.VendingMachineInvalidItemException: Invalid item
